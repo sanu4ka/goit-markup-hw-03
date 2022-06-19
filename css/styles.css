@@ -217,7 +217,7 @@ header > .container {
 }
 
 /* 2.2.3 Профиль работы */
-.work > .container {
+section.work {
   padding-top: 0;
 }
 .works {
