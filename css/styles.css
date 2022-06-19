@@ -1,0 +1,245 @@
+/* Содержание:
+1. Основные
+ 1.1 Списки, ссылки
+2. Главная страница
+ 2.1 Хедер
+ 2.2 Мейн
+  2.2.1 Герой
+  2.2.2 Преимущества
+  2.2.3 Профиль работы
+  2.2.4 Команда
+ 2.3 Футер
+3. Страница портфолио
+ 3.1 Кнопки портфолио
+ 3.2 Работы
+*/
+
+/* 1. Основные */
+
+:root {
+  /* Цета текста*/
+  --maintext-color: #ffffff;
+  --text-color: #212121;
+  --subtext-color: #757575;
+  --focus-color: #2196f3;
+  --logo-color: #000000;
+  --foter-linkclr: rgba(255, 255, 255, 0.6);
+  /* Шрифты */
+  --main-font: 'Roboto';
+  --logo-font: 'Raleway';
+  /* Цвета заливки */
+  --mainbcg-color: #ffffff;
+  --herofootbcg-color: #2f303a;
+  --portfolio-btnsbcg: #f5f4fa;
+  --focus-btnclr: #188ce8;
+  /* Другое */
+}
+body {
+  font-family: var(--main-font), sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--text-color);
+  background-color: var(--mainbcg-color);
+  letter-spacing: 0.03em;
+}
+
+/* 1.1 Списки, ссылки */
+
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+/* 2. Главная страница*/
+
+/* 2.1 Хедер */
+
+.header {
+  font-weight: 500;
+}
+.logo {
+  font-family: var(--logo-font), sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--focus-color);
+}
+.studio-header {
+  color: var(--logo-color);
+}
+.nav-list,
+.contacts {
+  letter-spacing: 0.02em;
+}
+.nav-list .link {
+  color: var(--text-color);
+}
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--focus-color);
+}
+.nav-list .link.current {
+  color: var(--focus-color);
+}
+.contacts-link {
+  color: var(--subtext-color);
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--focus-color);
+}
+
+/* 2.2 Мейн */
+
+/* 2.2.1 Герой */
+
+.hero {
+  background-color: var(--herofootbcg-color);
+  letter-spacing: 0.06em;
+  align-items: center;
+  text-align: center;
+}
+.hero-main {
+  color: var(--maintext-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+.main-button {
+  font-style: inherit;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--maintext-color);
+  background-color: var(--focus-color);
+  cursor: pointer;
+}
+.main-button:hover,
+.main-button:focus {
+  background-color: var(--focus-btnclr);
+}
+
+/* 2.2.2 Преимущества */
+
+.benefits-text {
+  visibility: hidden;
+}
+.benefits-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.benefits-description {
+  line-height: 1.71;
+  color: var(--subtext-color);
+}
+
+/* 2.2.3 Профиль работы */
+
+.works {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* 2.2.4 Команда */
+
+.team {
+  background-color: var(--portfolio-btnsbcg);
+}
+.team-description {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.team-member {
+  background-color: var(--mainbcg-color);
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-prof {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--subtext-color);
+}
+
+/* 2.3 Футер */
+
+.footer {
+  background-color: var(--herofootbcg-color);
+}
+.studio-footer {
+  color: var(--maintext-color);
+}
+address {
+  font-style: inherit;
+  line-height: 1.71;
+}
+.map-link {
+  color: var(--maintext-color);
+}
+.contacts-footer {
+  color: var(--foter-linkclr);
+}
+.map-link:hover,
+.map-link:focus,
+.contacts-footer:hover,
+.contacts-footer:focus {
+  color: var(--focus-color);
+}
+
+/* 3. Страница портфолио */
+
+/* 3.1 Кнопки портфолио */
+
+.portfolio-hero {
+  visibility: hidden;
+}
+.buttons-portfolio {
+  background-color: var(--portfolio-btnsbcg);
+  font-style: inherit;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.buttons-portfolio.current-btn {
+  background-color: var(--focus-color);
+  color: var(--maintext-color);
+}
+.buttons-portfolio:hover,
+.buttons-portfolio:focus {
+  background-color: var(--focus-btnclr);
+  color: var(--maintext-color);
+}
+/* 3.2 Работы */
+
+.portfolio-names {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--text-color);
+}
+.portfolio-spec {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--subtext-color);
+}
