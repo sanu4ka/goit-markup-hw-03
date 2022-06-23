@@ -163,7 +163,6 @@ header > .container {
 
 .hero {
   background-color: var(--herofootbcg-color);
-  letter-spacing: 0.06em;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -175,6 +174,7 @@ header > .container {
   line-height: 1.36;
   text-transform: uppercase;
   max-width: 696px;
+  letter-spacing: 0.06em;
   margin: auto;
   margin-bottom: 30px;
 }
@@ -359,7 +359,15 @@ address {
   flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
 }
 .portfolio-secttxt {
-  border: 1px solid var(--potfolio-sectbrd);
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: var(--potfolio-sectbrd);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--potfolio-sectbrd);
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: var(--potfolio-sectbrd);
   padding: 20px 24px;
 }
 .portfolio-names {
@@ -368,6 +376,7 @@ address {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-color);
+  margin-bottom: 4px;
 }
 .portfolio-spec {
   font-size: 16px;
